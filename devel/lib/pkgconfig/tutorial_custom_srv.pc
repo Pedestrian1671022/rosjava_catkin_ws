@@ -1,0 +1,8 @@
+prefix=/home/pedestrian/rosjava_catkin_ws/devel
+
+Name: tutorial_custom_srv
+Description: Description of tutorial_custom_srv
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/pedestrian/rosjava_catkin_ws/devel/lib 
+Requires: 

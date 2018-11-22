@@ -1,0 +1,1 @@
+因为rosjava_catkin_package_a，rosjava_catkin_package_b，rosjava_catkin_package_c和tutorial_custom_srv用到的rosjava_custom_srv不一样，所以编译前者的时候，把后者移出去，并更改tutorial_custom_srv；同理，编译后者的时候，把前者移出去，并更改tutorial_custom_srv。
