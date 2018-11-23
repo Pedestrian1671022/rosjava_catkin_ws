@@ -1,2 +1,2 @@
-rosjava_custom_srv:tutorial_custom_srv
+rosjava_custom_msg:rosjava_custom_srv
 -DCATKIN_DEVEL_PREFIX=/home/pedestrian/rosjava_catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pedestrian/rosjava_catkin_ws/install -G Unix Makefiles

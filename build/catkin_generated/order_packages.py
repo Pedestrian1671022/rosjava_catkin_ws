@@ -2,4 +2,4 @@
 source_root_dir = "/home/pedestrian/rosjava_catkin_ws/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/pedestrian/rosjava_catkin_ws/devel;/home/pedestrian/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/pedestrian/rosjava_catkin_ws/devel;/home/pedestrian/catkin_ws/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/pedestrian/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/pedestrian/catkin_ws/devel;/opt/ros/kinetic" != "" else []

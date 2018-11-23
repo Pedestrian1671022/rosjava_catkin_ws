@@ -379,6 +379,12 @@ rosjava_catkin_package_c_SOURCE_DIR:STATIC=/home/pedestrian/rosjava_catkin_ws/sr
 rosjava_catkin_package_c_gradle_BINARY:FILEPATH=/home/pedestrian/rosjava_catkin_ws/src/rosjava_catkin_package_c/gradlew
 
 //Value Computed by CMake
+rosjava_custom_msg_BINARY_DIR:STATIC=/home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_msg
+
+//Value Computed by CMake
+rosjava_custom_msg_SOURCE_DIR:STATIC=/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_msg
+
+//Value Computed by CMake
 rosjava_custom_srv_BINARY_DIR:STATIC=/home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv
 
 //Value Computed by CMake

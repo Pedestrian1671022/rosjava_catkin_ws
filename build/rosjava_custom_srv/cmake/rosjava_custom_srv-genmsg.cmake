@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "rosjava_custom_srv: 0 messages, 1 services")
+message(STATUS "rosjava_custom_srv: 0 messages, 3 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -23,6 +23,16 @@ add_custom_target(_rosjava_custom_srv_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosjava_custom_srv" "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" ""
 )
 
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_custom_target(_rosjava_custom_srv_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosjava_custom_srv" "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" ""
+)
+
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_custom_target(_rosjava_custom_srv_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosjava_custom_srv" "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genjava;genlisp;gennodejs;genpy
 #
@@ -33,6 +43,18 @@ add_custom_target(_rosjava_custom_srv_generate_messages_check_deps_${_filename}
 ### Generating Services
 _generate_srv_cpp(rosjava_custom_srv
   "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_cpp(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_cpp(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosjava_custom_srv
@@ -52,6 +74,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_cpp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_cpp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_cpp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rosjava_custom_srv_gencpp)
@@ -66,6 +92,18 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosjava_custom_srv_generate_message
 ### Generating Services
 _generate_srv_eus(rosjava_custom_srv
   "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_eus(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_eus(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosjava_custom_srv
@@ -85,6 +123,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_eus _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_eus _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_eus _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rosjava_custom_srv_geneus)
@@ -99,6 +141,18 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosjava_custom_srv_generate_message
 ### Generating Services
 _generate_srv_java(rosjava_custom_srv
   "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genjava_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_java(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genjava_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_java(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genjava_INSTALL_DIR}/rosjava_custom_srv
@@ -118,6 +172,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_java _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_java _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_java _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rosjava_custom_srv_genjava)
@@ -132,6 +190,18 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosjava_custom_srv_generate_message
 ### Generating Services
 _generate_srv_lisp(rosjava_custom_srv
   "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_lisp(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_lisp(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosjava_custom_srv
@@ -151,6 +221,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_lisp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_lisp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_lisp _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rosjava_custom_srv_genlisp)
@@ -165,6 +239,18 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosjava_custom_srv_generate_message
 ### Generating Services
 _generate_srv_nodejs(rosjava_custom_srv
   "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_nodejs(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_nodejs(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosjava_custom_srv
@@ -184,6 +270,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_nodejs _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_nodejs _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_nodejs _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rosjava_custom_srv_gennodejs)
@@ -202,6 +292,18 @@ _generate_srv_py(rosjava_custom_srv
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosjava_custom_srv
 )
+_generate_srv_py(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosjava_custom_srv
+)
+_generate_srv_py(rosjava_custom_srv
+  "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosjava_custom_srv
+)
 
 ### Generating Module File
 _generate_module_py(rosjava_custom_srv
@@ -216,6 +318,10 @@ add_dependencies(rosjava_custom_srv_generate_messages rosjava_custom_srv_generat
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_py _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv" NAME_WE)
+add_dependencies(rosjava_custom_srv_generate_messages_py _rosjava_custom_srv_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv" NAME_WE)
 add_dependencies(rosjava_custom_srv_generate_messages_py _rosjava_custom_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

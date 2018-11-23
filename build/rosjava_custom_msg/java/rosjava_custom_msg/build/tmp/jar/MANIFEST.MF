@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: rosjava_custom_msg;version="0.1.0";uses:="org.jboss.ne
+ tty.buffer,org.ros.internal.message"
+Bundle-SymbolicName: org.ros.rosjava_messages.rosjava_custom_msg
+Bundle-Version: 0.1.0
+Bundle-Name: rosjava_custom_msg
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1542932307000
+Import-Package: org.jboss.netty.buffer;version="[3.5,4)",org.ros.inter
+ nal.message
+Created-By: 1.8.0_152 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+

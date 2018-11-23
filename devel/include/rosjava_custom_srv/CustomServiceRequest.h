@@ -24,22 +24,17 @@ struct CustomServiceRequest_
   typedef CustomServiceRequest_<ContainerAllocator> Type;
 
   CustomServiceRequest_()
-    : a(0)
-    , b(0)  {
+    : data()  {
     }
   CustomServiceRequest_(const ContainerAllocator& _alloc)
-    : a(0)
-    , b(0)  {
+    : data(_alloc)  {
   (void)_alloc;
     }
 
 
 
-   typedef int32_t _a_type;
-  _a_type a;
-
-   typedef int32_t _b_type;
-  _b_type b;
+   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _data_type;
+  _data_type data;
 
 
 
@@ -75,7 +70,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
 // {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
@@ -85,12 +80,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -119,12 +114,12 @@ struct MD5Sum< ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "ef8322123148e475e3e93a1f609b2f70";
+    return "f43a8e1b362b75baa741461b46adc7e0";
   }
 
   static const char* value(const ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xef8322123148e475ULL;
-  static const uint64_t static_value2 = 0xe3e93a1f609b2f70ULL;
+  static const uint64_t static_value1 = 0xf43a8e1b362b75baULL;
+  static const uint64_t static_value2 = 0xa741461b46adc7e0ULL;
 };
 
 template<class ContainerAllocator>
@@ -143,8 +138,8 @@ struct Definition< ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocato
 {
   static const char* value()
   {
-    return "int32 a\n\
-int32 b\n\
+    return "uint8[] data\n\
+\n\
 ";
   }
 
@@ -163,8 +158,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.a);
-      stream.next(m.b);
+      stream.next(m.data);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -183,10 +177,12 @@ struct Printer< ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator> 
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::rosjava_custom_srv::CustomServiceRequest_<ContainerAllocator>& v)
   {
-    s << indent << "a: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.a);
-    s << indent << "b: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.b);
+    s << indent << "data[]" << std::endl;
+    for (size_t i = 0; i < v.data.size(); ++i)
+    {
+      s << indent << "  data[" << i << "]: ";
+      Printer<uint8_t>::stream(s, indent + "  ", v.data[i]);
+    }
   }
 };
 

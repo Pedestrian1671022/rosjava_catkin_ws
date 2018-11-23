@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::rosjava_custom_srv::CustomService > {
   static const char* value()
   {
-    return "f0b6d69ea10b0cf210cb349d58d59e8f";
+    return "f43a8e1b362b75baa741461b46adc7e0";
   }
 
   static const char* value(const ::rosjava_custom_srv::CustomService&) { return value(); }

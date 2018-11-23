@@ -24,17 +24,14 @@ struct CustomServiceResponse_
   typedef CustomServiceResponse_<ContainerAllocator> Type;
 
   CustomServiceResponse_()
-    : sum(0)  {
+    {
     }
   CustomServiceResponse_(const ContainerAllocator& _alloc)
-    : sum(0)  {
+    {
   (void)_alloc;
     }
 
 
-
-   typedef int32_t _sum_type;
-  _sum_type sum;
 
 
 
@@ -114,12 +111,12 @@ struct MD5Sum< ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator> 
 {
   static const char* value()
   {
-    return "0ba699c25c9418c0366f3595c0c8e8ec";
+    return "d41d8cd98f00b204e9800998ecf8427e";
   }
 
   static const char* value(const ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x0ba699c25c9418c0ULL;
-  static const uint64_t static_value2 = 0x366f3595c0c8e8ecULL;
+  static const uint64_t static_value1 = 0xd41d8cd98f00b204ULL;
+  static const uint64_t static_value2 = 0xe9800998ecf8427eULL;
 };
 
 template<class ContainerAllocator>
@@ -138,8 +135,7 @@ struct Definition< ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocat
 {
   static const char* value()
   {
-    return "int32 sum\n\
-\n\
+    return "\n\
 ";
   }
 
@@ -156,10 +152,8 @@ namespace serialization
 
   template<class ContainerAllocator> struct Serializer< ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator> >
   {
-    template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
-    {
-      stream.next(m.sum);
-    }
+    template<typename Stream, typename T> inline static void allInOne(Stream&, T)
+    {}
 
     ROS_DECLARE_ALLINONE_SERIALIZER
   }; // struct CustomServiceResponse_
@@ -175,11 +169,8 @@ namespace message_operations
 template<class ContainerAllocator>
 struct Printer< ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator> >
 {
-  template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator>& v)
-  {
-    s << indent << "sum: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.sum);
-  }
+  template<typename Stream> static void stream(Stream&, const std::string&, const ::rosjava_custom_srv::CustomServiceResponse_<ContainerAllocator>&)
+  {}
 };
 
 } // namespace message_operations

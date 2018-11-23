@@ -20,85 +20,67 @@
 
 (defclass rosjava_custom_srv::CustomServiceRequest
   :super ros::object
-  :slots (_a _b ))
+  :slots (_data ))
 
 (defmethod rosjava_custom_srv::CustomServiceRequest
   (:init
    (&key
-    ((:a __a) 0)
-    ((:b __b) 0)
+    ((:data __data) (make-array 0 :initial-element 0 :element-type :char))
     )
    (send-super :init)
-   (setq _a (round __a))
-   (setq _b (round __b))
+   (setq _data __data)
    self)
-  (:a
-   (&optional __a)
-   (if __a (setq _a __a)) _a)
-  (:b
-   (&optional __b)
-   (if __b (setq _b __b)) _b)
+  (:data
+   (&optional __data)
+   (if __data (setq _data __data)) _data)
   (:serialization-length
    ()
    (+
-    ;; int32 _a
-    4
-    ;; int32 _b
-    4
+    ;; uint8[] _data
+    (* 1    (length _data)) 4
     ))
   (:serialize
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; int32 _a
-       (write-long _a s)
-     ;; int32 _b
-       (write-long _b s)
+     ;; uint8[] _data
+     (write-long (length _data) s)
+     (princ _data s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; int32 _a
-     (setq _a (sys::peek buf ptr- :integer)) (incf ptr- 4)
-   ;; int32 _b
-     (setq _b (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; uint8[] _data
+   (let ((n (sys::peek buf ptr- :integer))) (incf ptr- 4)
+     (setq _data (make-array n :element-type :char))
+     (replace _data buf :start2 ptr-) (incf ptr- n))
    ;;
    self)
   )
 
 (defclass rosjava_custom_srv::CustomServiceResponse
   :super ros::object
-  :slots (_sum ))
+  :slots ())
 
 (defmethod rosjava_custom_srv::CustomServiceResponse
   (:init
    (&key
-    ((:sum __sum) 0)
     )
    (send-super :init)
-   (setq _sum (round __sum))
    self)
-  (:sum
-   (&optional __sum)
-   (if __sum (setq _sum __sum)) _sum)
   (:serialization-length
    ()
    (+
-    ;; int32 _sum
-    4
+    0
     ))
   (:serialize
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; int32 _sum
-       (write-long _sum s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; int32 _sum
-     (setq _sum (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;;
    self)
   )
@@ -107,7 +89,7 @@
   :super ros::object
   :slots ())
 
-(setf (get rosjava_custom_srv::CustomService :md5sum-) "f0b6d69ea10b0cf210cb349d58d59e8f")
+(setf (get rosjava_custom_srv::CustomService :md5sum-) "f43a8e1b362b75baa741461b46adc7e0")
 (setf (get rosjava_custom_srv::CustomService :datatype-) "rosjava_custom_srv/CustomService")
 (setf (get rosjava_custom_srv::CustomService :request) rosjava_custom_srv::CustomServiceRequest)
 (setf (get rosjava_custom_srv::CustomService :response) rosjava_custom_srv::CustomServiceResponse)
@@ -115,28 +97,24 @@
 (defmethod rosjava_custom_srv::CustomServiceRequest
   (:response () (instance rosjava_custom_srv::CustomServiceResponse :init)))
 
-(setf (get rosjava_custom_srv::CustomServiceRequest :md5sum-) "f0b6d69ea10b0cf210cb349d58d59e8f")
+(setf (get rosjava_custom_srv::CustomServiceRequest :md5sum-) "f43a8e1b362b75baa741461b46adc7e0")
 (setf (get rosjava_custom_srv::CustomServiceRequest :datatype-) "rosjava_custom_srv/CustomServiceRequest")
 (setf (get rosjava_custom_srv::CustomServiceRequest :definition-)
-      "int32 a
-int32 b
----
-int32 sum
+      "uint8[] data
 
+---
 ")
 
-(setf (get rosjava_custom_srv::CustomServiceResponse :md5sum-) "f0b6d69ea10b0cf210cb349d58d59e8f")
+(setf (get rosjava_custom_srv::CustomServiceResponse :md5sum-) "f43a8e1b362b75baa741461b46adc7e0")
 (setf (get rosjava_custom_srv::CustomServiceResponse :datatype-) "rosjava_custom_srv/CustomServiceResponse")
 (setf (get rosjava_custom_srv::CustomServiceResponse :definition-)
-      "int32 a
-int32 b
----
-int32 sum
+      "uint8[] data
 
+---
 ")
 
 
 
-(provide :rosjava_custom_srv/CustomService "f0b6d69ea10b0cf210cb349d58d59e8f")
+(provide :rosjava_custom_srv/CustomService "f43a8e1b362b75baa741461b46adc7e0")
 
 

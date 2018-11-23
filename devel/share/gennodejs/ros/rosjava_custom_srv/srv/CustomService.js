@@ -21,31 +21,22 @@ class CustomServiceRequest {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.a = null;
-      this.b = null;
+      this.data = null;
     }
     else {
-      if (initObj.hasOwnProperty('a')) {
-        this.a = initObj.a
+      if (initObj.hasOwnProperty('data')) {
+        this.data = initObj.data
       }
       else {
-        this.a = 0;
-      }
-      if (initObj.hasOwnProperty('b')) {
-        this.b = initObj.b
-      }
-      else {
-        this.b = 0;
+        this.data = [];
       }
     }
   }
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type CustomServiceRequest
-    // Serialize message field [a]
-    bufferOffset = _serializer.int32(obj.a, buffer, bufferOffset);
-    // Serialize message field [b]
-    bufferOffset = _serializer.int32(obj.b, buffer, bufferOffset);
+    // Serialize message field [data]
+    bufferOffset = _arraySerializer.uint8(obj.data, buffer, bufferOffset, null);
     return bufferOffset;
   }
 
@@ -53,15 +44,15 @@ class CustomServiceRequest {
     //deserializes a message object of type CustomServiceRequest
     let len;
     let data = new CustomServiceRequest(null);
-    // Deserialize message field [a]
-    data.a = _deserializer.int32(buffer, bufferOffset);
-    // Deserialize message field [b]
-    data.b = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [data]
+    data.data = _arrayDeserializer.uint8(buffer, bufferOffset, null)
     return data;
   }
 
   static getMessageSize(object) {
-    return 8;
+    let length = 0;
+    length += object.data.length;
+    return length + 4;
   }
 
   static datatype() {
@@ -71,14 +62,14 @@ class CustomServiceRequest {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'ef8322123148e475e3e93a1f609b2f70';
+    return 'f43a8e1b362b75baa741461b46adc7e0';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    int32 a
-    int32 b
+    uint8[] data
+    
     
     `;
   }
@@ -89,18 +80,11 @@ class CustomServiceRequest {
       msg = {};
     }
     const resolved = new CustomServiceRequest(null);
-    if (msg.a !== undefined) {
-      resolved.a = msg.a;
+    if (msg.data !== undefined) {
+      resolved.data = msg.data;
     }
     else {
-      resolved.a = 0
-    }
-
-    if (msg.b !== undefined) {
-      resolved.b = msg.b;
-    }
-    else {
-      resolved.b = 0
+      resolved.data = []
     }
 
     return resolved;
@@ -111,22 +95,13 @@ class CustomServiceResponse {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.sum = null;
     }
     else {
-      if (initObj.hasOwnProperty('sum')) {
-        this.sum = initObj.sum
-      }
-      else {
-        this.sum = 0;
-      }
     }
   }
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type CustomServiceResponse
-    // Serialize message field [sum]
-    bufferOffset = _serializer.int32(obj.sum, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -134,13 +109,11 @@ class CustomServiceResponse {
     //deserializes a message object of type CustomServiceResponse
     let len;
     let data = new CustomServiceResponse(null);
-    // Deserialize message field [sum]
-    data.sum = _deserializer.int32(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 4;
+    return 0;
   }
 
   static datatype() {
@@ -150,14 +123,12 @@ class CustomServiceResponse {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '0ba699c25c9418c0366f3595c0c8e8ec';
+    return 'd41d8cd98f00b204e9800998ecf8427e';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    int32 sum
-    
     
     `;
   }
@@ -168,13 +139,6 @@ class CustomServiceResponse {
       msg = {};
     }
     const resolved = new CustomServiceResponse(null);
-    if (msg.sum !== undefined) {
-      resolved.sum = msg.sum;
-    }
-    else {
-      resolved.sum = 0
-    }
-
     return resolved;
     }
 };
@@ -182,6 +146,6 @@ class CustomServiceResponse {
 module.exports = {
   Request: CustomServiceRequest,
   Response: CustomServiceResponse,
-  md5sum() { return 'f0b6d69ea10b0cf210cb349d58d59e8f'; },
+  md5sum() { return 'f43a8e1b362b75baa741461b46adc7e0'; },
   datatype() { return 'rosjava_custom_srv/CustomService'; }
 };

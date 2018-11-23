@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/pedestrian/rosjava_catkin_ws/build
 include rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp.dir/progress.make
 
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService.h
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h
 
 
 /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -63,8 +65,24 @@ rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp: /home/pe
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from rosjava_custom_srv/CustomService.srv"
 	cd /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv && /home/pedestrian/rosjava_catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from rosjava_custom_srv/CustomService1.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv && /home/pedestrian/rosjava_catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from rosjava_custom_srv/CustomService2.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv && /home/pedestrian/rosjava_catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 rosjava_custom_srv_generate_messages_cpp: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp
 rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService.h
+rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService1.h
+rosjava_custom_srv_generate_messages_cpp: /home/pedestrian/rosjava_catkin_ws/devel/include/rosjava_custom_srv/CustomService2.h
 rosjava_custom_srv_generate_messages_cpp: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_cpp.dir/build.make
 
 .PHONY : rosjava_custom_srv_generate_messages_cpp

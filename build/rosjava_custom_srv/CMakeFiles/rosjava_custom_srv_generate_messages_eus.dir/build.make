@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/pedestrian/rosjava_catkin_ws/build
 include rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus.dir/progress.make
 
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService.l
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService1.l
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService2.l
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/manifest.l
 
 
@@ -62,12 +64,24 @@ rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus: /home/pe
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from rosjava_custom_srv/CustomService.srv"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv
 
+/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService1.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService1.l: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from rosjava_custom_srv/CustomService1.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv
+
+/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService2.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService2.l: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from rosjava_custom_srv/CustomService2.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv
+
 /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for rosjava_custom_srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for rosjava_custom_srv"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv rosjava_custom_srv std_msgs
 
 rosjava_custom_srv_generate_messages_eus: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus
 rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService.l
+rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService1.l
+rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService2.l
 rosjava_custom_srv_generate_messages_eus: /home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/manifest.l
 rosjava_custom_srv_generate_messages_eus: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_eus.dir/build.make
 

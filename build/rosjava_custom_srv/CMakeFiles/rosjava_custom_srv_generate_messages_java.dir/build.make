@@ -54,11 +54,15 @@ CMAKE_BINARY_DIR = /home/pedestrian/rosjava_catkin_ws/build
 include rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_java.dir/progress.make
 
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_java: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_java: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_java: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_java: rosjava_custom_srv/java/rosjava_custom_srv/build.gradle
 
 
 rosjava_custom_srv/java/rosjava_custom_srv/build.gradle: /opt/ros/kinetic/lib/genjava/genjava_gradle_project.py
 rosjava_custom_srv/java/rosjava_custom_srv/build.gradle: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv
+rosjava_custom_srv/java/rosjava_custom_srv/build.gradle: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+rosjava_custom_srv/java/rosjava_custom_srv/build.gradle: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Java gradle project from rosjava_custom_srv"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genjava/cmake/../../../lib/genjava/genjava_gradle_project.py -o /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv/java -p rosjava_custom_srv
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && touch /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv/java/rosjava_custom_srv/droppings

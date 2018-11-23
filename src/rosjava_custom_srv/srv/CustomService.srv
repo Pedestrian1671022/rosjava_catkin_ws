@@ -1,3 +1,4 @@
-int32 size
+int32 a
+int32 b
 ---
-int64[] res
+int32 sum

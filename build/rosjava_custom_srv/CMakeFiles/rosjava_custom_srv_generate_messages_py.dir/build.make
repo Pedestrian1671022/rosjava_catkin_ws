@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/pedestrian/rosjava_catkin_ws/build
 include rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py.dir/progress.make
 
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService.py
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService1.py
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService2.py
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py
 
 
@@ -62,13 +64,27 @@ rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py: /home/ped
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV rosjava_custom_srv/CustomService"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv
 
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService1.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService1.py: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV rosjava_custom_srv/CustomService1"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv
+
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService2.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService2.py: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV rosjava_custom_srv/CustomService2"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv
+
 /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for rosjava_custom_srv"
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService1.py
+/home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService2.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for rosjava_custom_srv"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv --initpy
 
 rosjava_custom_srv_generate_messages_py: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py
 rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService.py
+rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService1.py
+rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/_CustomService2.py
 rosjava_custom_srv_generate_messages_py: /home/pedestrian/rosjava_catkin_ws/devel/lib/python2.7/dist-packages/rosjava_custom_srv/srv/__init__.py
 rosjava_custom_srv_generate_messages_py: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_py.dir/build.make
 

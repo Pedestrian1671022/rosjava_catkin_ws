@@ -117,8 +117,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pedestrian/rosjava_catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_msg/cmake_install.cmake")
   include("/home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv/cmake_install.cmake")
-  include("/home/pedestrian/rosjava_catkin_ws/build/tutorial_custom_srv/cmake_install.cmake")
 
 endif()
 

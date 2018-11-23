@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/pedestrian/rosjava_catkin_ws/build
 include rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs.dir/progress.make
 
 rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService.js
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService1.js
+rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService2.js
 
 
 /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +63,20 @@ rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs: /home
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from rosjava_custom_srv/CustomService.srv"
 	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv
 
+/home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService1.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService1.js: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from rosjava_custom_srv/CustomService1.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv
+
+/home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService2.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService2.js: /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pedestrian/rosjava_catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from rosjava_custom_srv/CustomService2.srv"
+	cd /home/pedestrian/rosjava_catkin_ws/build/rosjava_custom_srv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rosjava_custom_srv -o /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv
+
 rosjava_custom_srv_generate_messages_nodejs: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs
 rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService.js
+rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService1.js
+rosjava_custom_srv_generate_messages_nodejs: /home/pedestrian/rosjava_catkin_ws/devel/share/gennodejs/ros/rosjava_custom_srv/srv/CustomService2.js
 rosjava_custom_srv_generate_messages_nodejs: rosjava_custom_srv/CMakeFiles/rosjava_custom_srv_generate_messages_nodejs.dir/build.make
 
 .PHONY : rosjava_custom_srv_generate_messages_nodejs

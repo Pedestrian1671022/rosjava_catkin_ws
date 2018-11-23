@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosjava_custom_srv_generate_messages_eus"
   "/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService.l"
+  "/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService1.l"
+  "/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/srv/CustomService2.l"
   "/home/pedestrian/rosjava_catkin_ws/devel/share/roseus/ros/rosjava_custom_srv/manifest.l"
 )
 

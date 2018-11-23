@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv"
+services_str = "/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService.srv;/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService1.srv;/home/pedestrian/rosjava_catkin_ws/src/rosjava_custom_srv/srv/CustomService2.srv"
 pkg_name = "rosjava_custom_srv"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genjava;genlisp;gennodejs;genpy"
